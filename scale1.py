@@ -75,11 +75,11 @@ while True:
         if inputBtnSignal!=1:
             offset = new_val
         new_val -= offset
-        
+
         if new_val!=old_val:
             old_val = new_val
             
-            print("scale1: ", new_val, "offset: ", offset)
+            print("scale1: ", new_val, "/ offset: ", offset)
             
             params = {'s': 1, 'v': new_val}
             url = "http://1kr.kr:3011/super/reg_scale_value.php"

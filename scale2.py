@@ -79,7 +79,7 @@ while True:
         if new_val!=old_val:
             old_val = new_val
             
-            print("scale2: ", new_val, "offset: ", offset)
+            print("scale2: ", new_val, "/ offset: ", offset)
             
             params = {'s': 2, 'v': new_val}
             url = "http://1kr.kr:3011/super/reg_scale_value.php"
