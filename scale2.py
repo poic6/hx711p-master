@@ -72,13 +72,9 @@ while True:
         new_val = round(val*-1)
 
         inputBtnSignal = GPIO.input(21)
-        if inputBtnSignal!=1 and new_val !=0:
+        if inputBtnSignal!=1:
             offset = new_val
         new_val -= offset
-
-        if new_val < 0:
-            offset = -(new_val)
-            new_val += offset
         
         if new_val!=old_val:
             old_val = new_val
