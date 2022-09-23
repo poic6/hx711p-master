@@ -81,8 +81,8 @@ while True:
             
             print("scale2: ", new_val, "/ offset: ", offset)
             
-            params = {'s': 2, 'v': new_val}
-            url = "http://1kr.kr:3011/super/reg_scale_value.php"
+            params = {'s': 2, 'v': new_val, 'o': offset}
+            url = "http://smartsuper.cafe24.com/a_reg_weight.php"
             r = requests.get(url, params=params, verify=False)
             r.close()
 
